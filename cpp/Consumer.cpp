@@ -1,6 +1,7 @@
 #include "Style.h"
 
 #include <iostream>
+#include <cassert>
 
 // This is implemented in Rust.
 extern "C" Style* ComputeStyle();
@@ -16,7 +17,8 @@ static const char* FloatToString(StyleFloat aFloat)
     case StyleFloat::None:
       return "none";
   }
-  __builtin_unreachable();
+  assert(false);
+  return "Whoops, someone messed up";
 }
 
 extern "C" int main_cpp()
