@@ -1,7 +1,8 @@
 [package]
-name = "structs-now"
+name = "structs-playground"
 version = "0.1.0"
 authors = ["Emilio Cobos Álvarez <emilio@crisal.io>"]
+publish = false
 
 [build-dependencies]
 bindgen = "0.33.0"
