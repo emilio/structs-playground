@@ -13,6 +13,7 @@ fn main() {
         .header(src_dir.join("cpp").join("StyleStructs.h").to_string_lossy())
         .clang_arg("-xc++")
         .clang_arg("-std=c++11")
+        .rustified_enum("StyleFloat")
         .generate()
         .expect("Couldn't generate bindings");
 

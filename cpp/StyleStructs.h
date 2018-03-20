@@ -12,3 +12,15 @@ struct StyleColor
 {
   nscolor m_color;
 };
+
+enum StyleFloat : uint8_t
+{
+  None,
+  Left,
+  Right,
+};
+
+struct StyleDisplay
+{
+  StyleFloat m_float;
+};
